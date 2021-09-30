@@ -7,6 +7,10 @@ const app = express();
 
 //Middleware used in Express
 
+app.get('/users', function (req, res) {
+    res.send('Hello All Users')
+})
+
 app.get('/', function (req, res) {
     res.send('Hello World')
 })
